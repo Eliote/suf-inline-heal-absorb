@@ -1,0 +1,9 @@
+## Interface: 70300
+## Title: Shadowed UF In-line Heal Absorb
+## Notes: Moves the heal absorb bar into the top third of the hp bar
+## Author: Eliote
+## Version: @project-version@
+## RequiredDeps: ShadowedUnitFrames
+
+localization\enUS.lua
+ShadowedUF_InlineHealAbsorb.lua
