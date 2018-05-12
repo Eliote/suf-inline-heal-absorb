@@ -3,7 +3,7 @@
 -- "https://www.curseforge.com/wow/addons/shadoweduf_inlineabsorb"
 --
 
-local ADDON, Addon = ...
+local ADDON_NAME, PRIVATE_TABLE = ...
 local HealAbsorb = ShadowUF.modules["healAbsorb"]
 
 function HealAbsorb:OnLayoutApplied(frame)
@@ -80,16 +80,16 @@ function HealAbsorb:OnConfigurationLoad()
 	args.reverseFill = {
 		order = 4,
 		type = "toggle",
-		name = Addon.L["Reverse fill"],
-		desc = Addon.L["Changes the fill direction so the bar fill opposite the health bar."],
+		name = PRIVATE_TABLE.L["Reverse fill"],
+		desc = PRIVATE_TABLE.L["Changes the fill direction so the bar fill opposite the health bar."],
 		arg = "healAbsorb.reverseFill",
 		hidden = false,
 	}
 	args.width = {
 		order = 5,
 		type = "range",
-		name = Addon.L["Width"],
-		desc = Addon.L["How thick the absorb bar is compared to the health bar."],
+		name = PRIVATE_TABLE.L["Width"],
+		desc = PRIVATE_TABLE.L["How thick the absorb bar is compared to the health bar."],
 		min = 0,
 		max = 1,
 		step = 0.05,
@@ -100,8 +100,8 @@ function HealAbsorb:OnConfigurationLoad()
 	args.flip = {
 		order = 6,
 		type = "toggle",
-		name = Addon.L["Flip side"],
-		desc = Addon.L["Changes the side the absorb bar is attached too"],
+		name = PRIVATE_TABLE.L["Flip side"],
+		desc = PRIVATE_TABLE.L["Changes the side the absorb bar is attached too"],
 		arg = "healAbsorb.flip",
 		hidden = false,
 	}

@@ -1,5 +1,5 @@
 -- Default locale
-local ADDON, Addon = ...
+local ADDON_NAME, PRIVATE_TABLE = ...
 local L = {}
 L["Reverse fill"] = "Reverse fill"
 L["Changes the fill direction so the bar fill opposite the health bar."] = "Changes the fill direction so the bar fill opposite the health bar."
@@ -8,4 +8,4 @@ L["How thick the absorb bar is compared to the health bar."] = "How thick the ab
 L["Flip side"] = "Flip side"
 L["Changes the side the absorb bar is attached too"] = "Changes the side the absorb bar is attached too"
 
-Addon.L = L
+PRIVATE_TABLE.L = L
