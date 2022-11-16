@@ -1,4 +1,4 @@
-## Interface: 100000
+## Interface: 100002
 ## Title: Shadowed UF In-line Heal Absorb
 ## Notes: Moves the heal absorb bar into the top third of the hp bar
 ## Author: Eliote
